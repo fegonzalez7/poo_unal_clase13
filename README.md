@@ -624,11 +624,11 @@ while not cola.esta_vacia():
 ```  
 
 ### Priority Queues
-Las colas priorizadas, también conocidas como colas de prioridad, son una estructura de datos que almacena elementos con una prioridad asociada. Los elementos se desencolados de acuerdo a su prioridad, es decir, el elemento con la prioridad más alta se desencolará primero, independientemente del orden de inserción.
+Las colas priorizadas, también conocidas como colas de prioridad, son una estructura de datos que almacena elementos con una prioridad asociada. Los elementos son desencolados de acuerdo a su prioridad, es decir, el elemento con la prioridad más alta se desencolará primero, independientemente del orden de inserción.
 
 #### Características:
 + Cada elemento en la cola tiene una prioridad asociada.
-+ Los elementos se desencolados en orden de prioridad, desde la prioridad más alta a la más baja.
++ Los elementos son desencolados en orden de prioridad, desde la prioridad más alta a la más baja.
 + Si dos o más elementos tienen la misma prioridad, se siguen reglas adicionales (como orden de inserción) para desencolarse.
 + Suelen implementarse utilizando montículos (*heaps*), una estructura de datos especializada. Python proporciona el módulo heapq para trabajar con montículos.
 + La cola permite elementos con la misma prioridad. Sin embargo, el orden en que se devuelven no está garantizado.
