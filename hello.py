@@ -1,16 +1,16 @@
 from collections import defaultdict
 
 
-def letter_frequency_normal(sentence):
-    frequencies = {}  # Diccionario normal
+def letter_frequency_normal(sentence: str) -> dict:
+    frequencies: dict[str, int] = {}  # Diccionario normal
     for letter in sentence:
         frequency = frequencies.setdefault(letter, 0)  # Verifica si la clave existe
         frequencies[letter] = frequency + 1
     return frequencies
 
 
-def letter_frequency_default(sentence):
-    frequencies = defaultdict(int)  # defaultdict con valor por defecto int(0)
+def letter_frequency_default(sentence: str) -> defaultdict:
+    frequencies: defaultdict[str, int] = defaultdict(int)  # defaultdict con valor por defecto int(0)
     for letter in sentence:
         frequencies[letter] += 1
     return frequencies  # defaultdict se puede indexar igual que un diccionario normal
